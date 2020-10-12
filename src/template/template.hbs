@@ -1,0 +1,10 @@
+{{#each this}}
+<li>
+  <video controls="controls" poster="{{userImageUrl}}" src="{{videos.tiny.url}}" height="400" width="600"></video>
+  <p>Комментарии: {{comments}}</p>
+  <p>Загрузки: {{downloads}}</p>
+  <p>Продолжительность: {{duration}}</p>
+  <p>Лайки: {{likes}}</p>
+  <p>Просмотры: {{views}}</p>
+</li>
+{{/each}}
