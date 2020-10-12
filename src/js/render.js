@@ -1,9 +1,27 @@
 import fetch from './fetch.js'
 import refs from './refs.js'
 import template from '../template/template.hbs'
+import debounce from 'lodash.debounce'
+import infinity from 'infinite-scroll'
 
-fetch.getFetch()
-  .then((data => render(data.hits)))
+refs.userInput.addEventListener('input', debounce((e) => {
+  fetch.searchQ = e.target.value
+  refs.galleryList.innerHTML = ''
+  fetch.getFetch()
+    .then((data => render(data.hits)))
+  e.target.value = ""
+
+}, 1000))
+
+
+ window.addEventListener('scroll', (event) => {
+  fetch.setPage()
+    fetch.getFetch()
+      .then((data => render(data.hits)))
+
+ })
+
+
 
 function render(data) {
   const item = template(data);

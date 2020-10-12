@@ -12,13 +12,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+git"
+    "url": "git+https://github.com/AndriiSorokin/ilustration-catalog.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "/issues"
+    "url": "https://github.com/AndriiSorokin/ilustration-catalog/issues"
   },
   "homepage": "",
   "devDependencies": {
@@ -41,9 +41,13 @@
     "autoprefixer": "^10.0.0",
     "css": "^3.0.0",
     "css-loader": "^4.3.0",
+    "debounce": "^1.2.0",
     "gh-pages": "^3.1.0",
     "handlebars": "^4.7.6",
     "handlebars-loader": "^1.7.1",
+    "infinite-scroll": "^3.0.6",
+    "lodash": "^4.17.20",
+    "lodash.debounce": "^4.0.8",
     "mini-css-extract-plugin": "^0.11.2",
     "optimize-css-assets-webpack-plugin": "^5.0.4",
     "post": "0.0.1",
