@@ -1,0 +1,1 @@
+.gallery-list{display:flex;flex-wrap:wrap}li{list-style:none}.gallery-list li:not(:nth-child(2n)){margin-right:20px}
